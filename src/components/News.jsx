@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Navbar from "./Navbar";
+import NewsItem from "./Newsitem";
+import Spinner from './Spinner'
 
 
 const API_KEY = import.meta.env.VITE_API_KEY;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import NewsItem from "./Newsitem";
+import Spinner from "./Spinner";
 
 
 export default class News extends Component {
