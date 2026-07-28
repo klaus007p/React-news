@@ -4,7 +4,7 @@ import NewsItem from "./Newsitem";
 import Spinner from './Spinner'
 
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+// const API_KEY = import.meta.env.VITE_API_KEY;
 
 export default class News extends Component {
     constructor(props) {
@@ -81,12 +81,12 @@ export default class News extends Component {
 
         return (
             <div className="px-4 py-6 min-h-screen">
-                {/* Page Title */}
+              
                 <h1 className="text-center text-3xl font-extrabold mb-1 tracking-wider text-white">
                     📰 Top Headlines
                 </h1>
 
-                {/* Date Display */}
+                
                 <p className="text-center text-sm text-white/70 mb-6">
                     {new Date().toLocaleDateString('en-IN', {
                         weekday: 'long',
@@ -96,7 +96,7 @@ export default class News extends Component {
                     })}
                 </p>
 
-                {/* Infinite Scroll starts here */}
+               
                 <InfiniteScroll
                     dataLength={articles.length}                             // Length of current article list
                     next={this.fetchMoreData}                                // What to do on scroll down
@@ -114,7 +114,7 @@ export default class News extends Component {
                         )
                     }
                 >
-                    {/* Grid of News Cards */}
+                    
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 py-6">
                         {articles.map((element, index) => (
                             <NewsItem

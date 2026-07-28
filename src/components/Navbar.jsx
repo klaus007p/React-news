@@ -36,17 +36,16 @@ export default class Navbar extends Component {
             <header className="backdrop-blur-xl bg-zinc-950/50 text-white px-4 py-4 shadow-lg sticky top-0 z-50 min-w">
                 <nav className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:justify-between items-center gap-4">
 
-                    {/* Logo + Hamburger */}
+                    
                     <div className="w-full flex justify-between items-center">
                         <span className="text-3xl font-bold tracking-wider drop-shadow-lg">
-                            News<span className="text-purple-300">Nation</span>
+                           PrimePress<span className="text-purple-300">News</span>
                         </span>
                         <button onClick={this.toggleMenu} className="sm:hidden text-white">
                             {this.state.menuOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
                     </div>
 
-                    {/* Category Buttons */}
                     <ul
                         className={`flex-col sm:flex sm:flex-row sm:space-x-6 items-center ${this.state.menuOpen ? 'flex mt-4' : 'hidden'
                             } sm:mt-0`}

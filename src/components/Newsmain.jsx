@@ -90,7 +90,7 @@ export default class News extends Component {
                     </div>
                 )}
 
-                {/* Navigation Buttons */}
+            
                 <div className="flex justify-between items-center mt-8 px-4">
                     <button
                         disabled={this.state.page === 1}
@@ -105,7 +105,7 @@ export default class News extends Component {
                     <button
                         disabled={this.state.page >= Math.ceil(this.state.totalResults / 6)}
                         onClick={this.handleNext}
-                        className="px-5 py-2 bg-gray-600/30 border border-white/20 text-white rounded-full hover: bg-gray-700/20 hover:scale-105 transition duration-300"
+                        className="px-5 py-2 bg-gray-600/30 border border-white/20 text-white rounded-full hover:opacity-80 hover:scale-105 transition duration-300"
                     >
                         Next ➡
                     </button>

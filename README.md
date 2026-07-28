@@ -25,7 +25,7 @@ A modern and responsive **news platform** built with **React** and **Tailwind CS
 * **Lucide React** — Icons
 * **React Infinite Scroll Component** — Infinite scrolling
 * **React Top Loading Bar** — Page loading indicator
-* **date-fns** — Date formatting
+
 
 ## 📂 Project Structure
 
@@ -35,14 +35,8 @@ src/
 │   ├── Navbar.jsx
 │   ├── NewsCard.jsx
 │   └── ...
+|   
 │
-├── pages/
-│   ├── Home.jsx
-│   ├── Category.jsx
-│   └── ...
-│
-├── services/
-│   └── api.js
 │
 ├── App.jsx
 ├── main.jsx
@@ -85,23 +79,7 @@ If the project uses an external news API, create a `.env` file in the root direc
 VITE_NEWS_API_KEY=your_api_key_here
 ```
 
-> Never commit your API keys or `.env` file to GitHub.
 
-Add this to your `.gitignore`:
-
-```text
-.env
-.env.local
-```
-
-## 📸 Screenshots
-
-Add screenshots of your application here.
-
-```markdown
-![Home Page](./screenshots/home.png)
-![News Category](./screenshots/category.png)
-```
 
 ## 🔮 Future Improvements
 
