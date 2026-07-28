@@ -6,7 +6,7 @@ import News from './components/News'
 import NewsItem from './components/Newsitem'
 import Newsmain from './components/Newsmain'
 import Spinner from './components/Spinner'
-import './App.css'
+
 
 export default class App extends Component {
   state = {
