@@ -19,7 +19,7 @@ export default class News extends Component {
         try {
             this.setState({ loading: true });
 
-            const url = `https://newsapi.org/v2/top-headlines?language=en&topic=war&apiKey=ec99413521d1466f93d13e557c5080df&page=${this.state.page}&pageSize=6`;
+            const url = `/api/news?topic=war&page=${this.state.page}&pageSize=6`;
             const response = await fetch(url);
             const data = await response.json();
 

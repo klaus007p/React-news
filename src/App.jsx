@@ -11,7 +11,6 @@ import Spinner from './components/Spinner'
 export default class App extends Component {
   state = {
     progress: 0,
-    API_KEY: import.meta.env.VITE_API_KEY || "fallback_key"
   };
 
   setProgress = (progress) => {
@@ -47,7 +46,6 @@ export default class App extends Component {
                     <News
                       setProgress={this.setProgress}
                       category={category}
-                      API_KEY={this.state.API_KEY}
                     />
                   </main>
                 </>

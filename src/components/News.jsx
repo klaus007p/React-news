@@ -4,8 +4,6 @@ import NewsItem from "./Newsitem";
 import Spinner from './Spinner'
 
 
-// const API_KEY = import.meta.env.VITE_API_KEY;
-
 export default class News extends Component {
     constructor(props) {
         super(props);
@@ -42,8 +40,7 @@ export default class News extends Component {
         this.setState({ loading: true });
         this.props.setProgress(30);
 
-
-        const url = `https://newsapi.org/v2/top-headlines?language=en&category=${this.props.category}&apiKey=${this.props.API_KEY}&pageSize=10&page=${this.state.page}`
+        const url = `/api/news?category=${this.props.category}&page=${this.state.page}&pageSize=10`;
 
         try {
 
